@@ -1,0 +1,49 @@
+﻿生成启动时间为 2019/12/26 0:47:33。
+     1>项目“C:\Resource Manager\algorithm\Sort\Sort.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2015\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt _quick_sort_.cpp
+         _quick_sort_.cpp
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2146: 语法错误: 缺少“)”(在标识符“and”的前面)
+         c:\resource manager\algorithm\sort\_quick_sort_.cpp(27): note: 参见对正在编译的函数 模板 实例化“const T &detail::median<int,Compare>(const T &,const T &,const T &,Compare)”的引用
+                 with
+                 [
+                     T=int,
+                     Compare=std::less<int>
+                 ]
+         c:\resource manager\algorithm\sort\_quick_sort_.cpp(63): note: 参见对正在编译的函数 模板 实例化“const T &detail::iter_median<BidirIt,int,Compare>(Iter,Iter,Iter,Compare)”的引用
+                 with
+                 [
+                     T=int,
+                     BidirIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+                     Compare=std::less<int>,
+                     Iter=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+                 ]
+         c:\resource manager\algorithm\sort\_quick_sort_.cpp(71): note: 参见对正在编译的函数 模板 实例化“void quick_sort<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,int,std::less<T>>(BidirIt,BidirIt,Compare)”的引用
+                 with
+                 [
+                     T=int,
+                     BidirIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+                     Compare=std::less<int>
+                 ]
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2065: “and”: 未声明的标识符
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2146: 语法错误: 缺少“;”(在标识符“comp”的前面)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2146: 语法错误: 缺少“;”(在标识符“or”的前面)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2065: “or”: 未声明的标识符
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2146: 语法错误: 缺少“;”(在标识符“and”的前面)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(12): error C2059: 语法错误:“)”
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(13): error C2059: 语法错误:“return”
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(15): error C2059: 语法错误:“else”
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(15): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(15): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(18): error C2059: 语法错误:“else”
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(18): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(18): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(21): error C2059: 语法错误:“}”
+     1>c:\resource manager\algorithm\sort\_quick_sort_.cpp(21): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+     1>d:\vs2015\vc\include\utility(27): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+     1>d:\vs2015\vc\include\utility(27): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>已完成生成项目“C:\Resource Manager\algorithm\Sort\Sort.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.61

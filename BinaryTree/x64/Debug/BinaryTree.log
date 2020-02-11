@@ -1,0 +1,18 @@
+﻿生成启动时间为 2020/1/17 15:54:33。
+     1>项目“C:\Resource Manager\algorithm\BinaryTree\BinaryTree.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2015\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt bstree.cpp
+         bstree.cpp
+     1>c:\resource manager\algorithm\binarytree\bstree.cpp(212): warning C4474: printf: 格式字符串中传递的参数太多
+         c:\resource manager\algorithm\binarytree\bstree.cpp(212): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+     1>c:\resource manager\algorithm\binarytree\bstree.cpp(90): warning C4715: “bstree_insert”: 不是所有的控件路径都返回值
+       Link:
+         D:\VS2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Resource Manager\algorithm\x64\Debug\BinaryTree.exe" /INCREMENTAL /NOLOGO opencv_world320d.lib opencv_world320.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Resource Manager\algorithm\x64\Debug\BinaryTree.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Resource Manager\algorithm\x64\Debug\BinaryTree.lib" /MACHINE:X64 x64\Debug\binarytree.obj
+         x64\Debug\bstree.obj
+         x64\Debug\list_queue.obj
+         BinaryTree.vcxproj -> C:\Resource Manager\algorithm\x64\Debug\BinaryTree.exe
+     1>已完成生成项目“C:\Resource Manager\algorithm\BinaryTree\BinaryTree.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:00.61

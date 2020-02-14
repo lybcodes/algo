@@ -6,7 +6,7 @@
 
 using namespace std;
 
-#if 0
+
 /*ÁÚ½Ó±í´¢´æ*/
 const int MAX_NUM = 20;
 const int INF = 9999;
@@ -142,5 +142,5 @@ int main()
 	system("pause");
 	return 0;
 }
-#endif
+
 

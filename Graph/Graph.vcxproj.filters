@@ -30,5 +30,8 @@
     <ClCompile Include="DFS_BFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Dijkstra_List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

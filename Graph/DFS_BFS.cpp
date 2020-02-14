@@ -5,7 +5,7 @@
 
 //深度优先 (使用栈代替递归过程)
 //广度优先（使用队列）
-
+#if 0
 #define max_verts 10
 
 using namespace std;
@@ -179,3 +179,5 @@ int main()
 	system("pause");
 	return 0;
 }
+
+#endif

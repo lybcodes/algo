@@ -119,6 +119,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DFS_BFS.cpp" />
+    <ClCompile Include="Dijkstra_List.cpp" />
     <ClCompile Include="directed_ArrayGraph.cpp" />
     <ClCompile Include="Undirected_ListGraph.cpp" />
     <ClCompile Include="Undirected_ArrayGraph.cpp" />

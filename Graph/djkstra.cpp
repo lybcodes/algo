@@ -1,9 +1,9 @@
 // A C++ program for Dijkstra's single source shortest path algorithm. 单源最短路径算法
 // The program is for adjacency matrix representation of the graph 
-
+#include <iostream>
 #include <limits.h> 
 #include <stdio.h> 
-
+using namespace std;
 // Number of vertices in the graph 
 #define V 9 
 
@@ -21,18 +21,33 @@ int minDistance(int dist[], bool sptSet[])
 	return min_index;
 }
 
+//输出最短路径
+void printSolutionPath(int s, int t, int predecessor[])
+{
+	if (s == t) return;
+	printSolutionPath(s, predecessor[t], predecessor);
+	printf(" -> %d", t);
+}
+
 // A utility function to print the constructed distance array 
-int printSolution(int dist[])
+void printSolution(int src, int dist[], int predecessor[])
 {
 	printf("Vertex \t\t Distance from Source\n");
 	for (int i = 0; i < V; i++)
+	{
+		//printSolutionPath(0, i, predecessor);
 		printf("%d \t\t %d\n", i, dist[i]);
+		printSolutionPath(src, i, predecessor);
+		cout << endl;
+	}
 }
+
 
 // Function that implements Dijkstra's single source shortest path algorithm 
 // for a graph represented using adjacency matrix representation 
 void dijkstra(int graph[V][V], int src)
 {
+	int predecessor[V] = { 0 }; //用来还原最短路径
 	int dist[V]; // The output array. dist[i] will hold the shortest 
 				 // distance from src to i 
 
@@ -63,11 +78,15 @@ void dijkstra(int graph[V][V], int src)
 			// smaller than current value of dist[v] 
 			if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX
 				&& dist[u] + graph[u][v] < dist[v])
+			{
 				dist[v] = dist[u] + graph[u][v];
+				predecessor[v] = u;//每次更新距离时将路径信息保存到数组中
+			}
+				
 	}
 
 	// print the constructed distance array 
-	printSolution(dist);
+	printSolution(src, dist, predecessor);
 }
 
 // driver program to test above function 
@@ -86,5 +105,6 @@ int main()
 
 	dijkstra(graph, 0);
 
+	system("pause");
 	return 0;
 }
